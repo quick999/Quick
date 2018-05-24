@@ -1,8 +1,8 @@
-// Copyright (c) 2014-2017 The Dash Core developers
+// Copyright (c) 2014-2017 The Quick Core developers
 
 #include "cachemultimap.h"
 
-#include "test/test_dash.h"
+#include "test/test_quick.h"
 
 #include <algorithm>
 #include <iostream>

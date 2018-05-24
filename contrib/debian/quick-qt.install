@@ -1,0 +1,6 @@
+usr/local/bin/quick-qt usr/bin
+share/pixmaps/quick32.xpm usr/share/pixmaps
+share/pixmaps/quick16.xpm usr/share/pixmaps
+share/pixmaps/quick128.png usr/share/pixmaps
+debian/quick-qt.desktop usr/share/applications
+debian/quick-qt.protocol usr/share/kde4/services/

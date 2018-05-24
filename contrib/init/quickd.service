@@ -1,0 +1,22 @@
+[Unit]
+Description=Quick's distributed currency daemon
+After=network.target
+
+[Service]
+User=quickcore
+Group=quickcore
+
+Type=forking
+PIDFile=/var/lib/quickd/quickd.pid
+ExecStart=/usr/bin/quickd -daemon -pid=/var/lib/quickd/quickd.pid \
+-conf=/etc/quickcore/quick.conf -datadir=/var/lib/quickd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

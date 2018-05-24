@@ -1,11 +1,11 @@
 Sample configuration files for:
 
-SystemD: dashd.service
-Upstart: dashd.conf
-OpenRC:  dashd.openrc
-         dashd.openrcconf
-CentOS:  dashd.init
-OS X:    org.dash.dashd.plist
+SystemD: quickd.service
+Upstart: quickd.conf
+OpenRC:  quickd.openrc
+         quickd.openrcconf
+CentOS:  quickd.init
+OS X:    org.quick.quickd.plist
 
 have been made available to assist packagers in creating node packages here.
 
