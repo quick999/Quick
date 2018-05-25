@@ -169,8 +169,12 @@ public:
 	vSeeds.push_back(CDNSSeedData("159.89.10.135", "159.89.10.135"));
 
         // Quick addresses start with 'X'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
-        // Quick script addresses start with '7'
+        //std::vector<unsigned char> pubkey_address(2);
+	//pubkey_address[0] = 67;
+	//pubkey_address[1] = 72;
+	base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,57);
+        //base58Prefixes[PUBKEY_ADDRESS] = pubkey_address;
+	// Quick script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,16);
         // Quick private keys start with '7' or 'X'
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,204);
@@ -183,7 +187,7 @@ public:
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
