@@ -23,8 +23,9 @@ packages:
 - "python"
 reference_datetime: "2017-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/quickpay/quick.git"
-  "dir": "quick"
+- "url": "https://github.com/quick999/Quick.git"
+  "dir": "Quick"
+  "commit": "v0.12.1.5"
 files: []
 script: |
   WRAP_DIR=$HOME/wrapped
@@ -94,7 +95,7 @@ script: |
 
   export PATH=${WRAP_DIR}:${PATH}
 
-  cd quick
+  cd Quick
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do

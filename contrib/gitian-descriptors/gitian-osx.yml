@@ -23,8 +23,9 @@ packages:
 - "python"
 reference_datetime: "2017-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/quickpay/quick.git"
-  "dir": "quick"
+- "url": "https://github.com/quick999/Quick.git"
+  "dir": "Quick"
+  "commit": "v0.12.1.5"
 files:
 - "MacOSX10.9.sdk.tar.gz"
 script: |
@@ -71,7 +72,7 @@ script: |
   done
   export PATH=${WRAP_DIR}:${PATH}
 
-  cd quick
+  cd Quick
   BASEPREFIX=`pwd`/depends
 
   mkdir -p ${BASEPREFIX}/SDKs
