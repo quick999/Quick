@@ -166,7 +166,7 @@ public:
 //        vSeeds.push_back(CDNSSeedData("quickdot.io", "dnsseed.quickdot.io"));
 //        vSeeds.push_back(CDNSSeedData("masternode.io", "dnsseed.masternode.io"));
 //        vSeeds.push_back(CDNSSeedData("quickpay.io", "dnsseed.quickpay.io"));
-	vSeeds.push_back(CDNSSeedData("159.89.10.135", "159.89.10.135"));
+	vSeeds.push_back(CDNSSeedData("genesis.quickledger.io", "genesis.quickledger.io"));
 
         // Quick addresses start with 'X'
         //std::vector<unsigned char> pubkey_address(2);
@@ -270,7 +270,7 @@ public:
         vSeeds.clear();
 //        vSeeds.push_back(CDNSSeedData("quickdot.io",  "testnet-seed.quickdot.io"));
 //        vSeeds.push_back(CDNSSeedData("masternode.io", "test.dnsseed.masternode.io"));
-	vSeeds.push_back(CDNSSeedData("159.89.10.135", "159.89.10.135"));
+	vSeeds.push_back(CDNSSeedData("genesis.quickledger.io", "genesis.quickledger.io"));
 
         // Testnet Quick addresses start with 'y'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
